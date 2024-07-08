@@ -1,0 +1,8 @@
+.input-form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.input-feild{
+width:250px;
+}

@@ -1,0 +1,21 @@
+.main-heading{
+    text-align: center;
+  font-size: 35px;
+  font-weight: 700; color:#d2419b;
+} 
+.Edit-button{
+    height:20px;
+    width:100px;
+    color: azure;
+    background-color: darksalmon;
+    border-width: 0px;
+    border-radius: 8px;
+}
+.btn-create-post{
+    height:30px;
+    width:100px;
+    color: azure;
+    background-color: #7ae987;
+    border-width: 0px;
+    border-radius: 8px; 
+}

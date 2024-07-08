@@ -1,0 +1,19 @@
+.postItem-con{
+    display: flex;
+    flex-direction:column;
+}
+.author-name{
+    color:black;
+    font-family: "Roboto";
+    font-size: 10px;
+}
+.title{
+    color:black;
+    font-family: "Roboto";
+    font-size: 20px; 
+}
+.description{
+    color:black;
+    font-family: "Roboto";
+    font-size:15px;
+}

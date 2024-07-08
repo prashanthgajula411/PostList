@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// // src/App.js
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import React from 'react';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { ListProvider } from './context/listContext';
+// import CreatePost from './components/CreatePost';
+// import PostsList from "./components/PostsList" 
+
+// const App = () => {
+//     return (
+//         <BrowserRouter>
+//             <ListProvider>
+//                 <Routes>
+//                     <Route exact path='/' element={<PostsList />} />
+//                     <Route exact path='/post' element={<CreatePost />} />
+//                 </Routes>
+
+
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ListProvider } from './context/listContext';
+import CreatePost from './components/CreatePost';
+import PostsList from "./components/PostsList";
+import EditPost from "./components/EditPost";
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <ListProvider>
+                <Routes>
+                    <Route exact path='/' element={<PostsList />} />
+                    <Route exact path='/post' element={<CreatePost />} />
+                    <Route exact path='/edit/:postId' element={<EditPost />} />
+                </Routes>
+            </ListProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;
